@@ -1,0 +1,14 @@
+div{
+    width:250px;
+    text-align: center;
+    padding:10px;
+    background-color: rgb(154, 237, 245);
+}
+input[type="button"]
+{
+    background-color: blueviolet;
+    height: 40px;
+    width: 120px;
+    border:1px solid white;
+    color:white
+}
