@@ -7,10 +7,12 @@ import { Bindings } from './bindings/bindings';
 import { Home } from './home/home';
 import { GreetingCard } from './greeting-card/greeting-card';
 import { CommonModule } from '@angular/common';
+import { Postcard } from './postcard/postcard';
+import { Counter } from './counter/counter';
 // import { NgForOf } from "../../node_modules/@angular/common/types/_common_module-chunk";
 @Component({
   selector: 'app-root',
-  imports: [CommonModule,Home, RouterOutlet, UserProfile, Header, FormsModule,
+  imports: [Counter,Postcard,CommonModule,Home, RouterOutlet, UserProfile, Header, FormsModule,
     Bindings, GreetingCard],
   templateUrl: './app.html',
   styleUrl: './app.css'
@@ -26,6 +28,9 @@ persons =[
 ]
 setSelected(name:string){
   this.selectedPerson = name
+}
+showOnMap(postcode:string){
+  alert("post code is "+postcode)
 }
 public search_terms :string="USA"
 }

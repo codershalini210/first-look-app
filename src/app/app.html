@@ -1,3 +1,11 @@
+<app-counter #mycounter></app-counter>
+<button (click)="mycounter.reset()">Reset</button>
+<app-postcard postcode="325622" area="abc" 
+(mapRequested) ="showOnMap($event)"></app-postcard>
+<app-postcard postcode="445566" area="aabbc"
+
+(mapRequested) ="showOnMap($event)"></app-postcard>
+<hr>
 <h1>selected name :{{selectedPerson}}</h1>
 <app-greeting-card *ngFor="let p of persons" [personName]="p.name"
 [personEmail]="p.email"
