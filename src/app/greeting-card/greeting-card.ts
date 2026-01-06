@@ -1,4 +1,5 @@
-import { Component ,Input} from '@angular/core';
+import { Component ,Input,Output,EventEmitter} from '@angular/core';
+
 
 @Component({
   selector: 'app-greeting-card',
@@ -9,4 +10,9 @@ import { Component ,Input} from '@angular/core';
 export class GreetingCard {
 @Input() personName:string="";
 @Input() personEmail:String="";
+@Output() personSelected = new EventEmitter<string>();
+onSelect()
+{
+  this.personSelected.emit(this.personName)
+}
 }

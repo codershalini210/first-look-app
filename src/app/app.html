@@ -1,5 +1,7 @@
+<h1>selected name :{{selectedPerson}}</h1>
 <app-greeting-card *ngFor="let p of persons" [personName]="p.name"
 [personEmail]="p.email"
+(personSelected)="setSelected($event)"
 ></app-greeting-card>
 
 <!-- <app-home></app-home> -->

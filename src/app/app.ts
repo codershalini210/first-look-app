@@ -16,6 +16,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.css'
 })
 export class App {
+  selectedPerson:string="";
   protected readonly title = signal('first-look-app');
 persons =[
   {name:"Ron",email:"Ron@outlook.com"},
@@ -23,6 +24,8 @@ persons =[
   {name:"Maria",email:"maria@gmail.com"},
   {name:"Joseph",email:"Joseph@outlook.com"}
 ]
-
+setSelected(name:string){
+  this.selectedPerson = name
+}
 public search_terms :string="USA"
 }
