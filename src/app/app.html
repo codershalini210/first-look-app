@@ -1,4 +1,9 @@
-<app-bindings></app-bindings>
+<app-greeting-card *ngFor="let p of persons" [personName]="p.name"
+[personEmail]="p.email"
+></app-greeting-card>
+
+<!-- <app-home></app-home> -->
+<!-- <app-bindings></app-bindings>
 Enter city : <input type="text" [(ngModel)]="search_terms">
 {{search_terms}}
 <hr>
@@ -8,4 +13,4 @@ Enter city : <input type="text" [(ngModel)]="search_terms">
 <h1>Welcome to Angular</h1>
 <p>
   Learning Angular in 2025
-</p>
+</p> -->

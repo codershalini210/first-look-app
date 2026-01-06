@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './header.css',
 })
 export class Header {
-heading:string="IBM lorem ipsum"
-isLoggedIn:boolean=false
-login()
-{
-this.isLoggedIn = true
-}
+
 }
