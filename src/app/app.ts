@@ -10,12 +10,13 @@ import { CommonModule } from '@angular/common';
 import { Postcard } from './postcard/postcard';
 import { Counter } from './counter/counter';
 import { Todo } from './todo/todo';
+import { Pipechallenge } from './pipechallenge/pipechallenge';
 // import { NgForOf } from "../../node_modules/@angular/common/types/_common_module-chunk";
 @Component({
   selector: 'app-root',
   // imports: [Counter,Postcard,CommonModule,Home, RouterOutlet, UserProfile, Header, FormsModule,
   //   Bindings, GreetingCard],
-  imports:[RouterOutlet,Todo],
+  imports:[RouterOutlet,Todo,Pipechallenge],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
