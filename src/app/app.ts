@@ -13,6 +13,7 @@ import { InitialsPipe } from './initials-pipe';
 import { CounterButton } from './counter-button/counter-button';
 import { CounterDisplay } from './counter-display/counter-display';
 import { Pipechallenge } from './pipechallenge/pipechallenge';
+import { Logger } from './logger';
 @Component({
   selector: 'app-root',
 imports:[CounterButton,CounterDisplay,InitialsPipe,RouterOutlet,Todo,Pipechallenge,CommonModule,CurrencyPipe],
@@ -20,6 +21,15 @@ imports:[CounterButton,CounterDisplay,InitialsPipe,RouterOutlet,Todo,Pipechallen
   styleUrl: './app.css'
 })
 export class App {
+  constructor(private logger:Logger)
+  {
+
+  }
+  msg:string = " ";
+  showmsg()
+  {
+     this.msg = this.logger.log("dummy msg")
+  }
   isLoggedin = true
   countries =["c1","c2","c3","c4"]
    productPrice = 99.99
