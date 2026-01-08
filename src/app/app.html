@@ -1,3 +1,16 @@
+<app-counter-display></app-counter-display>
+<app-counter-button></app-counter-button>
+<h1>{{"hello world how are you today" |initials}}</h1>
+<h2>{{"Ron Capner"| initials}}</h2>
+<h1 *ngIf="isLoggedin">Welcome</h1>
+<h1 *ngIf="!isLoggedin">Login </h1>
+<h2>Product Price: {{productPrice | currency:"GBP"}}</h2>
+<ul>
+  <li *ngFor="let c of countries"
+  [ngClass]="{'highlight':c=='c3'}"
+  
+  >{{c}}</li>
+</ul>
 <app-pipechallenge></app-pipechallenge>
 <app-todo></app-todo>
 <!-- <app-counter #mycounter></app-counter>
