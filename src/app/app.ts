@@ -14,9 +14,10 @@ import { CounterButton } from './counter-button/counter-button';
 import { CounterDisplay } from './counter-display/counter-display';
 import { Pipechallenge } from './pipechallenge/pipechallenge';
 import { Logger } from './logger';
+import { Profile } from './profile/profile';
 @Component({
   selector: 'app-root',
-imports:[CounterButton,CounterDisplay,InitialsPipe,RouterOutlet,Todo,Pipechallenge,CommonModule,CurrencyPipe],
+imports:[Profile,CounterButton,CounterDisplay,InitialsPipe,RouterOutlet,Todo,Pipechallenge,CommonModule,CurrencyPipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
