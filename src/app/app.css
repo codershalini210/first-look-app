@@ -1,4 +1,4 @@
-h1
+/* h1
 {
     color:purple;
     text-align: center;
@@ -11,4 +11,14 @@ p
 .highlight
 {
     background-color:yellow;
+} */
+.light-theme
+{
+    background-color:white;
+    color:black;
+}
+.dark-theme
+{
+    background-color: black;
+    color:white;
 }
